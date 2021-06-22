@@ -24,6 +24,15 @@ body{
 }
 .ins{
 	flex-wrap: wrap;
+
+}
+.ins a{
+	text-decoration: none;
+}
+.ins mark{
+	background-color: #f4a261;
+	color:darkgreen;
+	font-weight: bold;
 }
 #navbar{
 	display: flex;
@@ -57,6 +66,7 @@ body{
 	padding-bottom: 2%;
 	background-color: #264653;
 }
+
 #instructions h1{
 	font-size: 30px;
 	padding-left: 50px;
@@ -249,7 +259,13 @@ body{
 }
 
 .cards div{
-	border: 2px black double;
+	border: 5px black double;
+
+}
+.cards mark{
+	color: red;
+	background-color: white;
+	font-weight: bold;
 }
 
 .card1{
@@ -343,6 +359,56 @@ body{
 	font-size: 18px;
 	font-family: Courier New;
 }
+#instructions4{
+	padding-top: 5%;
+	background-color: #f4a261;
+	height: 80vh;
+}
+#instructions4 h1{
+	font-size: 30px;
+	padding-left: 50px;
+	font-weight: bold;
+	color: white;
+	font-family: Arial Narrow;
+	letter-spacing: 0.3rem;
+	text-shadow: 2px 2px 10px black;
+}
+#instructions4 h2{
+	color: black;
+	font-family: Courier New;
+	padding-left: 50px;
+	padding-right: 50px;
+	line-height: 1.5em;
+	font-size: 20px;
+	font-weight: normal;
+	text-align: justify;
+	text-shadow: 1px 1px 1px white;
+}
+.lelao h3{
+	padding-left: 50px;
+	font-size: 30px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+
+	width: 100%;
+	color: black;
+	font-weight: bold;
+	color: skyblue;
+	letter-spacing: 0.3rem;
+
+	text-shadow: 2px 2px 20px red;
+	
+	line-height: 30rem;
+	
+	background-image:url('../images/lelouch.jpeg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 30% 70%;
+	
+
+}
+
 
 /*.card img{
 	width: 10%;
