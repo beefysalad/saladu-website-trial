@@ -1,0 +1,351 @@
+body{
+	background: black;
+	color: #555;
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 1.5em;
+	margin: 0;
+}
+#main-header{
+	position: fixed;
+	width: 100%;
+	color: white;
+	background: coral;
+}
+#main-header h1{
+	padding-left: 50px;
+	
+	text-shadow: 2px 2px 10px black;
+}
+.container{
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: hidden;
+}
+.ins{
+	flex-wrap: wrap;
+}
+#navbar{
+	display: flex;
+	padding-left: 60%;
+	overflow: hidden;
+	color: #fff;
+}
+#navbar ul{
+	list-style: none;
+}
+#navbar li{
+	display: inline;
+	position: relative;
+	padding-left: 5px;
+}
+#navbar a{
+	margin-left: 30px;
+	/*padding-left: 30px;*/
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 3px 3px 5px black
+}
+#navbar a:hover{
+	color: cyan;
+
+
+}
+#instructions{
+	padding-top: 5%;
+	padding-bottom: 2%;
+	background-color: #264653;
+}
+#instructions h1{
+	font-size: 30px;
+	padding-left: 50px;
+	font-weight: bold;
+	color: white;
+	font-family: Arial Narrow;
+	letter-spacing: 0.3rem;
+	text-shadow: 2px 2px 10px black;
+}
+#instructions h2{
+	
+	font-family: Courier New;
+	padding-left: 50px;
+	padding-right: 50px;
+	line-height: 1.5em;
+	font-size: 20px;
+	font-weight: normal;
+	color: whitesmoke;
+	text-align: justify;
+
+}
+.divclass{
+	box-shadow: 0px 0px 15px 1px black inset;
+	background-color: #cccccc;
+	margin: auto;
+	margin-top: 20%;
+	margin-bottom: 20%;
+	height: 20rem;
+	width: 80%;
+}
+.divclass h1{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	color: black;
+	width: 100%;
+	line-height: 9em;
+	font-family: Verdana;
+	/*text-shadow: 2px 2px 1px cyan, 2px 2px 1px yellow;*/
+	text-shadow: 4px 3px 0px cyan, -2px -2px 0px red;
+	
+}
+.end{
+	background-color: pink;
+	border: 50px solid #264653;
+}
+#instructions2{
+
+	padding-top: 4%;
+	padding-bottom: 1%;
+	height: 100vh;
+	background-color: #2a9d8f;
+}
+#instructions2 h1{
+
+	font-size: 30px;
+	padding-left: 50px;
+	font-weight: bold;
+	color: white;
+	font-family: Arial Narrow;
+	letter-spacing: 0.3rem;
+	text-shadow: 2px 2px 10px black;
+}
+#instructions2 h2{
+	color: white;
+	font-family: Courier New;
+	padding-left: 50px;
+	padding-right: 50px;
+	line-height: 1.5em;
+	font-size: 20px;
+	font-weight: normal;
+	text-align: justify;
+}
+
+.formborder{
+	box-shadow: 0px 0px 15px 1px black;
+	background-color: white;
+	border: 1px white solid;
+	border-radius: 25px;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 20%;
+	height: 35rem;
+	width: 50%;
+}
+.formborder h3{
+	letter-spacing: 0.2em;
+	width: 100%;
+	color: #264653;
+	font-family: Candara;
+	font-size: 35px;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
+.my-form{
+	/*padding-left: 30px;*/
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.my-form .form-group{
+	padding-bottom: 20px;
+}
+.my-form label{
+	font-size: 20px;
+	color: #264653;
+	line-height: 3rem;
+	display: block;
+}
+.my-form input[type="text"],.my-form textarea, .my-form input[type="password"]{
+	padding: 10px;
+	width: 90%;
+	border-radius: 35px;
+	outline: none;
+}
+.button{
+	box-shadow: 10px 10px 5px grey;
+	margin-top: 20px;
+	color: white;
+	background-color: #264653;
+	border-radius: 35px;
+	width: 93%;
+	line-height: 20px;
+	padding: 10px;
+	font-size: 20px;
+
+}
+.button:hover, .button:focus{
+	box-shadow: 0 0.5em 0.5em -0.4em var(-- hover);
+	transform: translateY(-0.5em);
+}
+#instructions3{
+
+	padding-top: 4%;
+	padding-bottom: 2%;
+	height: 100vh;
+	background-color: #e9c46a;
+}
+#instructions3 h1{
+	font-size: 30px;
+	padding-left: 50px;
+	font-weight: bold;
+	color: white;
+	font-family: Arial Narrow;
+	letter-spacing: 0.3rem;
+	text-shadow: 2px 2px 10px black;
+}
+#instructions3 h2{
+	color: black;
+	font-family: Courier New;
+	padding-left: 50px;
+	padding-right: 50px;
+	line-height: 1.5em;
+	font-size: 20px;
+	font-weight: normal;
+	text-align: justify;
+	text-shadow: 1px 1px 1px white;
+}
+#instructions3 h3{
+	/*display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;*/
+	align-content: center;
+	justify-content: center;
+	display: inline-flex;
+	color: white;
+	font-size: 40px;
+	width: 100%;
+	text-shadow: 1px 1px 5px black;
+}
+/*.cards{
+	margin-left: 50px;
+	background-color: white;
+	background-image:url('../images/html.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center 20px;
+
+	width: 30%;
+	height: 25em;
+}*/
+@media(min-width: 468px)
+{
+	.cards{
+		display: flex;
+	}
+}
+
+.cards div{
+	border: 2px black double;
+}
+
+.card1{
+	margin-top: 50px;
+	margin-left: 50px;
+	background-color: white;
+	background-image:url('../images/html.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center 20px;
+	width: 30%;
+	height: 25em;
+	box-shadow: 0px 0px 30px 1px black;
+}
+.card1 h4{
+	margin-top: 150px;
+	color: black;
+	align-content: center;
+	justify-content: center;
+	display: inline-flex;
+	font-size: 30px;
+	width: 100%;
+}
+.card1 p{
+	margin-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: justify;
+	line-height:2em;
+	font-size: 20px;
+	font-family: Courier New;
+}
+.card2{
+	margin-top: 50px;
+	margin-left: 50px;
+	background-color: white;
+	background-image:url('../images/css.png');
+	background-repeat: no-repeat;
+	background-size: 150px 150px;
+	background-position: center 10px;
+	width: 30%;
+	height: 25em;
+	box-shadow: 0px 0px 30px 1px black;
+}
+.card2 h5{
+	margin-top: 160px;
+	color: black;
+	align-content: center;
+	justify-content: center;
+	display: inline-flex;
+	font-size: 30px;
+	width: 100%;
+}
+.card2 p{
+	margin-top: -15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: justify;
+	line-height:2em;
+	font-size: 19px;
+	font-family: Courier New;
+}
+.card3{
+	margin-top: 50px;
+	margin-left: 50px;
+	background-color: white;
+	background-image:url('../images/javascript.png');
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: center 20px;
+	width: 30%;
+	height: 25em;
+	box-shadow: 0px 0px 30px 1px black;
+
+}
+.card3 h6{
+	margin-top: 160px;
+	color: black;
+	align-content: center;
+	justify-content: center;
+	display: inline-flex;
+	font-size: 30px;
+	width: 100%;
+}
+.card3 p{
+	margin-top: -40px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: justify;
+	line-height:2em;
+	font-size: 18px;
+	font-family: Courier New;
+}
+
+/*.card img{
+	width: 10%;
+	height: 20%;
+	background-position: center center;
+}*/
