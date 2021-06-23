@@ -35,7 +35,6 @@ body{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 100%;
 }
 .ins{
 	flex-wrap: wrap;
@@ -304,20 +303,7 @@ body{
 	width: 100%;
 }
 
-.card1{
-	background-image:url('../images/html.png');
-}
-.card1 h4{
-	margin-top: 150px;
-	color: black;
-	align-content: center;
-	justify-content: center;
-	display: inline-flex;
-	font-size: 30px;
-	width: 100%;
-}
-.card1 p{
-	margin-top: 10px;
+.card p {
 	padding-left: 30px;
 	padding-right: 30px;
 	text-align: justify;
@@ -325,49 +311,26 @@ body{
 	font-size: 20px;
 	font-family: Courier New;
 }
+
+.card1{
+	background-image:url('../images/html.png');
+}
+.card1 p {
+	margin-top: 10px;
+}
 .card2{
 	background-image:url('../images/css.png');
 	background-size: 150px 150px;
 }
-.card2 h5{
-	margin-top: 160px;
-	color: black;
-	align-content: center;
-	justify-content: center;
-	display: inline-flex;
-	font-size: 30px;
-	width: 100%;
-}
 .card2 p{
 	margin-top: -15px;
-	padding-left: 30px;
-	padding-right: 30px;
-	text-align: justify;
-	line-height:2em;
-	font-size: 19px;
-	font-family: Courier New;
 }
 .card3{
 	background-image:url('../images/javascript.png');
 
 }
-.card3 h6{
-	margin-top: 160px;
-	color: black;
-	align-content: center;
-	justify-content: center;
-	display: inline-flex;
-	font-size: 30px;
-	width: 100%;
-}
 .card3 p{
 	margin-top: -40px;
-	padding-left: 30px;
-	padding-right: 30px;
-	text-align: justify;
-	line-height:2em;
-	font-size: 18px;
-	font-family: Courier New;
 }
 #instructions4{
 	padding-top: 5%;
