@@ -1,3 +1,15 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+:root {
+	--main-header-height: 5rem;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
 body{
 	background: black;
 	color: #555;
@@ -9,18 +21,21 @@ body{
 #main-header{
 	position: fixed;
 	width: 100%;
+	top: 0;
+	left: 0;
+	height: var(--main-header-height);
 	color: white;
 	background: coral;
+	padding: 0 2rem;
 }
 #main-header h1{
-	padding-left: 50px;
-	
 	text-shadow: 2px 2px 10px black;
 }
 .container{
 	display: flex;
-	flex-wrap: nowrap;
-	overflow: hidden;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
 }
 .ins{
 	flex-wrap: wrap;
@@ -36,17 +51,14 @@ body{
 }
 #navbar{
 	display: flex;
-	padding-left: 60%;
-	overflow: hidden;
 	color: #fff;
 }
 #navbar ul{
 	list-style: none;
+	padding: 0;
 }
 #navbar li{
 	display: inline;
-	position: relative;
-	padding-left: 5px;
 }
 #navbar a{
 	margin-left: 30px;
@@ -62,7 +74,7 @@ body{
 
 }
 #instructions{
-	padding-top: 5%;
+	padding-top: calc(var(--main-header-height) + 4%);
 	padding-bottom: 2%;
 	background-color: #264653;
 }
@@ -118,7 +130,6 @@ body{
 
 	padding-top: 4%;
 	padding-bottom: 1%;
-	height: 100vh;
 	background-color: #2a9d8f;
 }
 #instructions2 h1{
@@ -194,7 +205,8 @@ body{
 	line-height: 20px;
 	padding: 10px;
 	font-size: 20px;
-
+	transition: all .2s ease-out;
+	cursor: pointer;
 }
 .button:hover, .button:focus{
 	box-shadow: 0 0.5em 0.5em -0.4em var(-- hover);
@@ -204,7 +216,6 @@ body{
 
 	padding-top: 4%;
 	padding-bottom: 2%;
-	height: 100vh;
 	background-color: #e9c46a;
 }
 #instructions3 h1{
@@ -258,6 +269,12 @@ body{
 	}
 }
 
+.cards {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 2rem;
+}
+
 .cards div{
 	border: 5px black double;
 
@@ -268,17 +285,27 @@ body{
 	font-weight: bold;
 }
 
-.card1{
-	margin-top: 50px;
-	margin-left: 50px;
+.card {
 	background-color: white;
-	background-image:url('../images/html.png');
 	background-repeat: no-repeat;
 	background-size: 100px 100px;
 	background-position: center 20px;
 	width: 30%;
-	height: 25em;
 	box-shadow: 0px 0px 30px 1px black;
+}
+
+.card h4 {
+	margin-top: 150px;
+	color: black;
+	align-content: center;
+	justify-content: center;
+	display: inline-flex;
+	font-size: 30px;
+	width: 100%;
+}
+
+.card1{
+	background-image:url('../images/html.png');
 }
 .card1 h4{
 	margin-top: 150px;
@@ -299,16 +326,8 @@ body{
 	font-family: Courier New;
 }
 .card2{
-	margin-top: 50px;
-	margin-left: 50px;
-	background-color: white;
 	background-image:url('../images/css.png');
-	background-repeat: no-repeat;
 	background-size: 150px 150px;
-	background-position: center 10px;
-	width: 30%;
-	height: 25em;
-	box-shadow: 0px 0px 30px 1px black;
 }
 .card2 h5{
 	margin-top: 160px;
@@ -329,16 +348,7 @@ body{
 	font-family: Courier New;
 }
 .card3{
-	margin-top: 50px;
-	margin-left: 50px;
-	background-color: white;
 	background-image:url('../images/javascript.png');
-	background-repeat: no-repeat;
-	background-size: 100px 100px;
-	background-position: center 20px;
-	width: 30%;
-	height: 25em;
-	box-shadow: 0px 0px 30px 1px black;
 
 }
 .card3 h6{
@@ -362,7 +372,6 @@ body{
 #instructions4{
 	padding-top: 5%;
 	background-color: #f4a261;
-	height: 80vh;
 }
 #instructions4 h1{
 	font-size: 30px;
@@ -385,7 +394,7 @@ body{
 	text-shadow: 1px 1px 1px white;
 }
 .lelao h3{
-	padding-left: 50px;
+	margin: 0;
 	font-size: 30px;
 	display: flex;
 	align-content: center;
